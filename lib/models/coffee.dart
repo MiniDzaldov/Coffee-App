@@ -5,7 +5,7 @@ class Coffee {
   final double price;
   final String imagePath;
   int quantity;
-
+  
   Coffee({
     required this.name,
     required this.price,

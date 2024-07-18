@@ -51,25 +51,29 @@ class _CoffeeOrderScreenState extends State<CoffeeOrderScreen> {
           ),
           actions: [
             TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                  Navigator.pop(context, true);
-                },
-                child: Container(
-                  decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.white,
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8)),
-                  child: Text(
-                    'OK',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),
+              onPressed: () {
+                Navigator.pop(context);
+                Navigator.pop(context, true);
+              },
+              child: Container(
+                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.white,
+                    width: 1.0,
                   ),
-                )),
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.transparent,
+                ),
+                child: Text(
+                  'OK',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ).then((_) {
@@ -159,7 +163,7 @@ class _CoffeeOrderScreenState extends State<CoffeeOrderScreen> {
                           ),
                           IconButton(
                             onPressed: increament,
-                            icon: Icon(Icons.add_circle),
+                            icon: Icon(Icons.add),
                             color: Colors.grey,
                           ),
                         ],
